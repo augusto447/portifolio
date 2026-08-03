@@ -4,6 +4,8 @@ import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { Projects } from "@/components/projects";
 import { Services } from "@/components/services";
+import { Technologies } from "@/components/technologies";
+import { TimeLine } from "@/components/timeline";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Services />
       <Projects />
       <Experiences />
+      <TimeLine />
+      <Technologies />
     </div>
   );
 }

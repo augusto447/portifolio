@@ -136,7 +136,7 @@ export function Header() {
             Timeline
           </Link>
 
-          <Link href="#tecnologia" onClick={() => setOpen(false)}>
+          <Link href="#tecnologies" onClick={() => setOpen(false)}>
             Tecnologias
           </Link>
 

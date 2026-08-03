@@ -1,4 +1,4 @@
-import profile from "@/assets/profile.png";
+import profile from "@/assets/profile2.jpeg";
 import Image from "next/image";
 
 export function About() {
@@ -13,7 +13,7 @@ export function About() {
   return (
     <section className="px-5 lg:px-10 py-20" id="about">
       <div className="mb-6">
-        <h2 className="text-4xl font-bold md:text-5xl tracking-tight text-center text-white  ">
+        <h2 className="text-4xl font-bold  tracking-tight text-center text-white  ">
           Sobre <span className="text-red-500"> Mim</span>
         </h2>
         <div className="text-center mt-4 flex justify-center">

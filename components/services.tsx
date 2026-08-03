@@ -55,7 +55,7 @@ export function Services() {
   return (
     <section className="px-6 md:px-10 py-16" id="services">
       <div>
-        <h2 className="text-center text-4xl md:text-5xl font-bold text-white tracking-tight">
+        <h2 className="text-center text-4xl  font-bold text-white tracking-tight">
           Serviços
         </h2>
 
