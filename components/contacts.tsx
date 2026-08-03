@@ -11,7 +11,7 @@ import { FramerEmotion } from "./framermotion";
 
 export function Contact() {
   return (
-    <FramerEmotion id="contact" className="px-6 md:px-10 py-16">
+    <FramerEmotion id="contact" className="px-5 md:px-10 py-5 scroll-mt-24">
       <h2 className="text-center text-4xl  font-bold text-white tracking-tight">
         Entre em contacto
       </h2>

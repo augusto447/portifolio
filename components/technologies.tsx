@@ -11,7 +11,7 @@ import { useTechnologies } from "@/hooks/useTechnology";
 export function Technologies() {
   const { technologies } = useTechnologies();
   return (
-    <FramerEmotion className="px-6 md:px-10 py-16" id="technogies">
+    <FramerEmotion className="px-5 md:px-10 py-5 scroll-mt-24" id="technogies">
       <div>
         <h2 className="text-center text-4xl  font-bold text-white tracking-tight">
           Tecnologias

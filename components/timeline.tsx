@@ -7,7 +7,7 @@ export function TimeLine() {
   const { timeline } = useTimeline();
 
   return (
-    <FramerEmotion id="timeline" className="px-6 md:px-10 py-20">
+    <FramerEmotion id="timeline" className="px-5 md:px-10 py-5 scroll-mt-24">
       <div>
         <h2 className="text-center text-3xl md:text-4xl font-bold text-white tracking-tight">
           Linha do Tempo

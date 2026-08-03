@@ -16,7 +16,7 @@ export function Projects() {
   const { projects } = useProjects();
 
   return (
-    <FramerEmotion className="px-6 md:px-10 py-16" id="projects">
+    <FramerEmotion className="px-5 md:px-10 py-5 scroll-mt-24" id="projects">
       <div>
         <h2 className="text-center text-4xl  font-bold text-white tracking-tight">
           Projectos

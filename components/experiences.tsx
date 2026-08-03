@@ -12,7 +12,10 @@ export function Experiences() {
   const { experiences } = useExperience();
 
   return (
-    <FramerEmotion id="experiences" className="px-6 md:px-10 py-16 ">
+    <FramerEmotion
+      id="experiences"
+      className="px-5 md:px-10 py-5 scroll-mt-24 "
+    >
       <div>
         <h2 className="text-center text-4xl font-bold text-white tracking-tight">
           Experiências

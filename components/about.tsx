@@ -13,7 +13,7 @@ export function About() {
   ];
 
   return (
-    <FramerEmotion className="px-5 lg:px-10 py-20" id="about">
+    <FramerEmotion className="px-5 lg:px-10 py-5 scroll-mt-24" id="about">
       <div className="mb-6">
         <h2 className="text-4xl font-bold  tracking-tight text-center text-white  ">
           Sobre <span className="text-red-500"> Mim</span>
