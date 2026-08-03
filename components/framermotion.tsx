@@ -34,7 +34,7 @@ export function FramerEmotion({
         ease: "easeOut",
       }}
       viewport={{
-        once: false,
+        once: true,
         amount: 0.25,
       }}
     >
