@@ -53,7 +53,7 @@ export function Projects() {
     },
     {
       icon: Pizza,
-      link: "https://vis-overde-uen6-gta8awlf1-augusto447s-projects.vercel.app",
+      link: "",
       title: "Pizza Shop Dashboard",
       description:
         "Dashboard administrativo para gestão de pedidos e visualização de informações.",
@@ -67,7 +67,7 @@ export function Projects() {
     },
     {
       icon: CreditCard,
-      link: "https://vis-overde-uen6-gta8awlf1-augusto447s-projects.vercel.app",
+      link: "trust-pay-iota.vercel.app",
 
       title: "TrustPay",
       description: "Aplicação web focada em soluções de pagamentos digitais.",

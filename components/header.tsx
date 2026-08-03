@@ -15,7 +15,7 @@ export function Header() {
         top-0
         z-50
         px-5
-        py-6
+        py-3
         lg:px-10
         bg-black
         shadow-lg
@@ -69,7 +69,7 @@ export function Header() {
 
         <Link
           className="relative   text-gray-400 hover:text-white  inline-block after:w-0 hover:after:w-full after:absolute after:h-[2px] after:duration-300 after:transition-all after:bottom-1 after:left-0 after:bg-red-500"
-          href="#tech"
+          href="#technogies"
         >
           Tecnologias
         </Link>

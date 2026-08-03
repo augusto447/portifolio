@@ -23,7 +23,7 @@ export function About() {
         </div>
       </div>
 
-      <div className="text-white flex-col flex lg:flex-row items-center max-w-5xl mx-auto gap-10">
+      <div className="text-white  flex-col flex lg:flex-row items-center max-w-5xl mx-auto gap-10">
         <div className="relative flex-shrink-0">
           <div className="absolute inset-0 rounded-full bg-red-500/20 blur-3xl scale-90" />
 
