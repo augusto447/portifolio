@@ -1,3 +1,5 @@
+import { useServices } from "@/hooks/useServices";
+import { FramerEmotion } from "./framermotion";
 import {
   Card,
   CardContent,
@@ -5,55 +7,12 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import {
-  Code2,
-  LayoutTemplate,
-  Plug,
-  Palette,
-  LayoutDashboard,
-  Smartphone,
-} from "lucide-react";
 
 export function Services() {
-  const services = [
-    {
-      icon: Code2,
-      title: "Desenvolvimento Frontend de Website & Sistemas",
-      description: "Interfaces modernas e responsivas.",
-    },
-    {
-      icon: LayoutTemplate,
-      title: "Landing Page",
-      description:
-        "Páginas profissionais focadas em apresentação de produtos e serviços.",
-    },
-    {
-      icon: Plug,
-      title: "Integração com APIs",
-      description:
-        "Consumo de APIs REST e integração de dados em aplicações web.",
-    },
-    {
-      icon: Palette,
-      title: "UI/UX Design",
-      description:
-        "Interfaces intuitivas com foco na experiência do utilizador.",
-    },
-    {
-      icon: LayoutDashboard,
-      title: "Aplicações Web",
-      description: "Dashboards e sistemas web modernos e escaláveis.",
-    },
-    {
-      icon: Smartphone,
-      title: "Responsividade",
-      description:
-        "Layouts adaptados para computadores, tablets e smartphones.",
-    },
-  ];
+  const { services } = useServices();
 
   return (
-    <section className="px-6 md:px-10 py-16" id="services">
+    <FramerEmotion className="px-6 md:px-10 py-16" id="services">
       <div>
         <h2 className="text-center text-4xl  font-bold text-white tracking-tight">
           Serviços
@@ -109,6 +68,6 @@ export function Services() {
           );
         })}
       </div>
-    </section>
+    </FramerEmotion>
   );
 }

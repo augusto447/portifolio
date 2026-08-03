@@ -1,5 +1,7 @@
 import profile from "@/assets/profile2.jpeg";
+
 import Image from "next/image";
+import { FramerEmotion } from "./framermotion";
 
 export function About() {
   const technologies = [
@@ -11,7 +13,7 @@ export function About() {
   ];
 
   return (
-    <section className="px-5 lg:px-10 py-20" id="about">
+    <FramerEmotion className="px-5 lg:px-10 py-20" id="about">
       <div className="mb-6">
         <h2 className="text-4xl font-bold  tracking-tight text-center text-white  ">
           Sobre <span className="text-red-500"> Mim</span>
@@ -81,6 +83,6 @@ export function About() {
           </div>
         </div>
       </div>
-    </section>
+    </FramerEmotion>
   );
 }

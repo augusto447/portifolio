@@ -1,4 +1,3 @@
-import { Code2, Database, GitBranch, Users } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -6,59 +5,13 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
+import { FramerEmotion } from "./framermotion";
+import { useTechnologies } from "@/hooks/useTechnology";
 
 export function Technologies() {
-  const technologies = [
-    {
-      icon: Code2,
-      title: "Frontend",
-      description:
-        "Construção de interfaces modernas, responsivas e escaláveis.",
-      Technologies: [
-        "React.js",
-        "Next.js",
-        "Vue.js",
-        "Nuxt.js",
-        "TypeScript",
-        "JavaScript",
-        "Tailwind CSS",
-        "Shadcn UI",
-      ],
-    },
-
-    {
-      icon: GitBranch,
-
-      title: "Versionamento & DevOps",
-      description:
-        "Ferramentas para organização, versionamento e entrega de aplicações.",
-      Technologies: [
-        "Git",
-        "GitHub",
-        "Docker",
-        "Docker-Compose",
-        "TypeScript",
-        "Vercel",
-      ],
-    },
-
-    {
-      icon: Database,
-      title: "APis & Banco de Dados",
-      Technologies: ["Rest API", "PostgreSQL", "MySQL"],
-    },
-
-    {
-      icon: Users,
-      title: "Metodologias Ágeis",
-      description:
-        "Práticas utilizadas no desenvolvimento de software em equipa.",
-      Technologies: ["SCrum", "Kamban"],
-    },
-  ];
-
+  const { technologies } = useTechnologies();
   return (
-    <section className="px-6 md:px-10 py-16" id="technogies">
+    <FramerEmotion className="px-6 md:px-10 py-16" id="technogies">
       <div>
         <h2 className="text-center text-4xl  font-bold text-white tracking-tight">
           Tecnologias
@@ -118,6 +71,6 @@ export function Technologies() {
           );
         })}
       </div>
-    </section>
+    </FramerEmotion>
   );
 }

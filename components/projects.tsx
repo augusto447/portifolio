@@ -7,85 +7,16 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import {
-  Leaf,
-  Droplet,
-  Tractor,
-  Pizza,
-  CreditCard,
-  LayoutDashboardIcon,
-  Globe,
-} from "lucide-react";
+
+import { FramerEmotion } from "./framermotion";
+import { useProjects } from "@/hooks/useProjects";
+import { Globe } from "lucide-react";
 
 export function Projects() {
-  const projects = [
-    {
-      icon: Leaf,
-      title: "Vision Verde",
-      link: "https://vis-overde-uen6-f5vxu7pgw-augusto447s-projects.vercel.app/",
-
-      description:
-        "Plataforma para conectar produtores agrícolas e compradores, reduzindo desperdícios através da tecnologia.",
-      technologies: ["React.js", "Tailwind CSS", "TypeScript", "REST API"],
-    },
-    {
-      icon: Droplet,
-      title: "AquaSmart",
-      link: "https://aquasmart-tau.vercel.app/",
-      description:
-        "Sistema de monitoramento de aquicultura com visualização de dados dos sensores em tempo real.",
-      technologies: [
-        "React.js",
-        "Recharts",
-        "C# .NET",
-        "PostgreSQL",
-        "Docker",
-        "REST API",
-      ],
-    },
-    {
-      icon: Tractor,
-      title: "Agrozimbo",
-      link: "https://agro-zimbu.vercel.app/",
-      description:
-        "Aplicação web para apoiar produtores agrícolas com uma interface moderna e responsiva.",
-      technologies: ["React.js", "Tailwind CSS", "JavaScript", "REST API"],
-    },
-    {
-      icon: Pizza,
-      link: "",
-      title: "Pizza Shop Dashboard",
-      description:
-        "Dashboard administrativo para gestão de pedidos e visualização de informações.",
-      technologies: [
-        "React.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Shadcn UI",
-        "Recharts",
-      ],
-    },
-    {
-      icon: CreditCard,
-      link: "trust-pay-iota.vercel.app",
-
-      title: "TrustPay",
-      description: "Aplicação web focada em soluções de pagamentos digitais.",
-      technologies: ["React.js", "Next.js", "TypeScript", "Tailwind CSS"],
-    },
-    {
-      icon: LayoutDashboardIcon,
-      link: "https://manager.buki.ao/",
-
-      title: "Buki Manager Panel",
-      description:
-        "Painel administrativo para gestão de transações e dados da plataforma Buki.",
-      technologies: ["Vue.js", "Nuxt.js", "TypeScript", "Nuxt UI", "REST API"],
-    },
-  ];
+  const { projects } = useProjects();
 
   return (
-    <section className="px-6 md:px-10 py-16" id="projects">
+    <FramerEmotion className="px-6 md:px-10 py-16" id="projects">
       <div>
         <h2 className="text-center text-4xl  font-bold text-white tracking-tight">
           Projectos
@@ -118,7 +49,7 @@ export function Projects() {
               <CardHeader className="relative z-10">
                 <div
                   className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl 
-                                bg-red-500/10 border border-red-500/20 
+                                bg-red-500/10 border  border-red-500/20 
                                 group-hover:bg-red-500/20 transition-colors duration-300"
                 >
                   <Icon className="h-6 w-6 text-red-500" />
@@ -132,11 +63,11 @@ export function Projects() {
                 </CardDescription>
               </CardHeader>
 
-              <CardContent className="relative z-10">
+              <CardContent className="relative z-10 border-red-500">
                 <div className="flex flex-wrap gap-2">
                   {projects.technologies.map((tech) => (
                     <span
-                      className="rounded-full text-sm text-red-400 border px-3 py-1 bg-red-500/10"
+                      className="rounded-full text-sm text-red-400 border  border-red-500  px-3 py-1 bg-red-500/10"
                       key={tech}
                     >
                       {" "}
@@ -160,6 +91,6 @@ export function Projects() {
           );
         })}
       </div>
-    </section>
+    </FramerEmotion>
   );
 }

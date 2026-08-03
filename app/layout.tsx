@@ -6,6 +6,10 @@ export const metadata = {
   title: "Augusto Manuel | Frontend Developer",
   description:
     "Portfólio de Augusto Manuel - Frontend Developer especializado em React, Next.js, Vue.js e TypeScript.",
+
+  openGraph: {
+    images: ["/profile2.jpeg"],
+  },
 };
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
